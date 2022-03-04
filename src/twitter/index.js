@@ -20,6 +20,14 @@ const getRateLimit = async () => {
     } catch (error) {
         console.log(error);
     }
+};
+
+const getUserInfo = async ({ twitterHandler }) => {
+    try {
+        const params = { screen_name: twitterHandler };
+        const user = await client.get('users/lookup', params);
+        return user[0];
+    } catch (error) {}
 }
 
-module.exports = { getRateLimit };
+module.exports = { getRateLimit, getUserInfo };
