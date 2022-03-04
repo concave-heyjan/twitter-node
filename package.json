@@ -1,0 +1,21 @@
+{
+  "name": "twitter",
+  "version": "1.0",
+  "description": "twitter api node",
+  "main": "index.js",
+  "author": "heyjan",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "twitter": "^1.7.1"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0"
+  }
+}
